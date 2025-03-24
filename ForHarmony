@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will you be my gf? :3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffe6f2;
+            padding: 50px;
+            color: #d63384;
+            background-image: url('https://www.transparenttextures.com/patterns/flower-pattern.png');
+        }
+        .container {
+            margin-top: 50px;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            border: 5px solid #ff99cc;
+        }
+        h1 {
+            color: #ff66b2;
+        }
+        .gif-container {
+            margin-top: 20px;
+        }
+        .buttons {
+            margin-top: 20px;
+            position: relative;
+        }
+        button {
+            font-size: 20px;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .yes {
+            background-color: #ff99cc;
+            color: white;
+        }
+        .yes:hover {
+            background-color: #ff66b2;
+        }
+        .no {
+            background-color: #ffb3d9;
+            color: white;
+            position: absolute;
+        }
+        .flower-container {
+            margin-top: 20px;
+        }
+        .flower-container img {
+            width: 50px;
+            margin: 5px;
+        }
+    </style>
+    <script>
+        function sayYes() {
+            alert('Yay! I’m so happy! ❤️');
+        }
+        function moveNoButton() {
+            let button = document.getElementById("noButton");
+            let x = Math.random() * (window.innerWidth - 100);
+            let y = Math.random() * (window.innerHeight - 50);
+            button.style.left = x + "px";
+            button.style.top = y + "px";
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Will you be my gf? :3</h1>
+        <div class="flower-container">
+            <img src="https://cdn.pixabay.com/photo/2016/03/31/19/56/flower-1297041_1280.png" alt="Flower">
+            <img src="https://cdn.pixabay.com/photo/2016/03/31/19/56/flower-1297041_1280.png" alt="Flower">
+            <img src="https://cdn.pixabay.com/photo/2016/03/31/19/56/flower-1297041_1280.png" alt="Flower">
+        </div>
+        <div class="gif-container">
+            <img src="https://media.tenor.com/VTqA1bJ5LQwAAAAM/milk-and-mocha.gif" alt="Milk and Mocha Love Gif" width="300">
+        </div>
+        <div class="flower-container">
+            <img src="https://cdn.pixabay.com/photo/2016/03/31/19/56/flower-1297041_1280.png" alt="Flower">
+            <img src="https://cdn.pixabay.com/photo/2016/03/31/19/56/flower-1297041_1280.png" alt="Flower">
+            <img src="https://cdn.pixabay.com/photo/2016/03/31/19/56/flower-1297041_1280.png" alt="Flower">
+        </div>
+        <div class="buttons">
+            <button class="yes" onclick="sayYes()">Yes</button>
+            <button class="no" id="noButton" onmouseover="moveNoButton()">No</button>
+        </div>
+    </div>
+</body>
+</html>
